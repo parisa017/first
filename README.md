@@ -58,7 +58,7 @@ def main():
             num = int(input("Task number to complete: ")) - 1
             complete_todo(todos, num)
         elif choice == "d":
-            num = int(input("Task number to delete: ")) - 1
+            num = int(input("Task number to delete: ")) - 
             delete_todo(todos, num)
         elif choice == "q":
             print("👋 Goodbye!")
