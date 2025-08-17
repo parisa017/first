@@ -55,7 +55,7 @@ def main():
             task = input("Enter a new task: ")
             add_todo(todos, task)
         elif choice == "c":
-            num = int(input("Task number to complete: ")) - 1
+            num = int(input("Task number to complete: ")) - 
             complete_todo(todos, num)
         elif choice == "d":
             num = int(input("Task number to delete: ")) - 
