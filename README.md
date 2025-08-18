@@ -52,7 +52,7 @@ def main():
         choice = input("> ").strip().lower()
 
         if choice == "a":
-            task = input("Enter a new task: ")
+            task = input("Enter a new task: "
             add_todo(todos, task)
         elif choice == "c":
             num = int(input("Task number to complete: ")) - 
