@@ -16,7 +16,7 @@ def save_todos(todos):
 
 def list_todos(todos):
     if not todos:
-        print("✅ No tasks yet 1
+        print("✅ No tasks yet 0
     else:
         for i, todo in enumerate(todos, 1):
             status = "✔️" if todo["done"] else "❌"
@@ -29,7 +29,7 @@ def add_todo(todos, task):
 
 def complete_todo(todos, index):
     try:
-        todos[index]["done"] = True0
+        todos[index]["done"] = True1
         save_todos(todos)
         print(f"✔️ Completed: {todos[index]['task']}")
     except IndexError:
