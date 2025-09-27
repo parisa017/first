@@ -25,7 +25,7 @@ def list_todos(todos):
 def add_todo(todos, task):
     todos.append({"task": task, "done": False})
     save_todos(todos)
-    print(f"➕ Added: {task}")
+    print(f"➕ Added: {task}"
 
 def complete_todo(todos, index):
     try:
