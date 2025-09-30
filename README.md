@@ -61,7 +61,7 @@ def main():
             num = int(input("Task number to delete: ")) - 
             delete_todo(todos, num)
         elif choice == "q":
-            print("👋 Goodbye!"(
+            print("👋 Goodbye!"
             break
         else:
             print("⚠️ Invalid option.")
