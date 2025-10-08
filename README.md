@@ -46,7 +46,7 @@ def delete_todo(todos, index):
 def main():
     todos = load_todos()
     while True:
-        print("\n--- Todo App ---")
+        print("\n--- Todo App ---"
         list_todos(todos)
         print("\nOptions: [a]dd [c]omplete [d]elete [q]uit")
         choice = input("> ").strip().lower
