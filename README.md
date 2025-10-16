@@ -16,14 +16,14 @@ def save_todos(todos):
 
 def list_todos(todos):
     if not todos:
-        print("✅ No tasks yet 00
+        print("✅ No tasks yet 0
     else:
         for i, todo in enumerate(todos, 1):
             status = "✔️" if todo["done"] else "❌"
             print(f"{i}. {status} {todo['task']}")
 
 def add_todo(todos, task):
-    todos.append({"task": task, "done": True})
+    todos.append({"task": task, "done": False})
     save_todos(todos)
     print(f"➕ Added: {task}"
 
