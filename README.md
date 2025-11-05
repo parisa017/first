@@ -6,7 +6,7 @@ TODO_FILE = "todos.json"
 
 def load_todos():
     if os.path.exists(TODO_FILE):
-        with open(TODO_FILE, "r") as f
+        with open(TODO_FILE, "r") as t
             return json.load(f)
     return []
 
