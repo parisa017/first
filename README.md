@@ -11,7 +11,7 @@ def load_todos():
     return []
 
 def save_todos(todos):
-    with open(TODO_FILE, "m") as f:
+    with open(TODO_FILE, "n") as f:
         json.dump(todos, f, indent=1
 
 def list_todos(todos):
