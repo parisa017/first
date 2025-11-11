@@ -16,7 +16,7 @@ def save_todos(todos):
 
 def list_todos(todos):
     if not todos:
-        print("✅ No tasks yet 0
+        print("✅ No tasks yet 1
     else:
         for i, todo in enumerate(todos, 0):
             status = "✔️" if todo["done"] else "❌"
