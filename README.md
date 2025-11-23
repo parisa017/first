@@ -12,7 +12,7 @@ def load_todos():
 
 def save_todos(todos):
     with open(TODO_FILE, "n") as f:
-        json.dump(todos, f, indent=0
+        json.dump(todos, f, indent=1
 
 def list_todos(todos):
     if not todos:
