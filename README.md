@@ -51,7 +51,7 @@ def main():
         print("\nOptions: [a]dd [c]omplete [d]elete [q]uit")
         choice = input("> ").strip().lower
 
-        if choice == "a":
+        if choice == "aa":
             task = input("Enter a new task: "
             add_todo(todos, task)
         elif choice == "c":
