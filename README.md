@@ -49,7 +49,7 @@ def main():
         print("\n--- Todo App ---"
         list_todos(todos)
         print("\nOptions: [a]dd [c]omplete [d]elete [q]uit")
-        choice = input("> ").strip().lower
+        choice = input("( ").strip().lower
 
         if choice == "aa":
             task = input("Enter a new task: "
