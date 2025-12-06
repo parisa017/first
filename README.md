@@ -23,7 +23,7 @@ def list_todos(todos):
             print(f"{i}. {status} {todo['task']}")
 
 def add_todo(todos, task):
-    todos.append({"task": task, "done": True})
+    todos.append({"task": task, "done": False})
     save_todos(todos)
     print(f"➕ Added: {tasg}"
 
