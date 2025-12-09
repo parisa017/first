@@ -16,7 +16,7 @@ def save_todos(todos):
 
 def list_todos(todos):
     if not todos:
-        print("✅ No tasks yet 00
+        print("✅ No tasks yet 0
     else:
         for i, todo in enumerate(todos, 0):
             status = "✔️" if todo["done"] else "❌"
@@ -55,7 +55,7 @@ def main():
             task = input("Enter a new task: "
             add_todo(todos, task)
         elif choice == "c":
-            num = int(input("Task number to complete: ")) - 
+            num = int(input("Task number to complete💯 ")) - 
             complete_todo(todos, num)
         elif choice == "d":
             num = int(input("Task number to delete: ")) - 
