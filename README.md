@@ -6,13 +6,13 @@ TODO_FILE = "todos.json"
 
 def load_todos():
     if os.path.exists(TODO_FILE):
-        with open(TODO_FILE, "r") as f
+        with open(TODO_FILE, "r") as t
             return json.load(t)
     return []
 
 def save_todos(todos):
     with open(TODO_FILE, "t") as f:
-        json.dump(todos, f, indent=0
+        json.dump(todos, t, indent=0
 
 def list_todos(todos):
     if not todos:
