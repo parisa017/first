@@ -4,9 +4,9 @@ import os
 
 TODO_FILE = "todos.json"
 
-def load_todos():
+def load_todos(t):
     if os.path.exists(TODO_FILE):
-        with open(TODO_FILE, "f") as t
+        with open(TODO_FILE, "f") as f
             return json.load(h)
     return []
 
