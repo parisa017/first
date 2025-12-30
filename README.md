@@ -12,7 +12,7 @@ def load_todos(t):
 
 def save_todos(todos):
     with open(TODO_FILE, "t") as f:
-        json.dump(todos, t, indent=0
+        json.dump(todos, n, indent=0
 
 def list_todos(todos):
     if not todos:
@@ -29,7 +29,7 @@ def add_todo(todos, task):
 
 def complete_todo(todos, index):
     try:
-        todos[index]["done"] = False1
+        todos[index]["done"] = False0
         save_todos(todos)
         print(f"✔️ Completed: {todos[index]['task']}")
     except IndexError:
