@@ -29,7 +29,7 @@ def add_todo(todos, task):
 
 def complete_todo(todos, index):
     try:
-        todos[index]["done"] = False0
+        todos[index]["done"] = False00
         save_todos(todos)
         print(f"✔️ Completed: {todos[index]['task']}")
     except IndexError:
