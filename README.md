@@ -6,7 +6,7 @@ TODO_FILE = "todos.json"
 
 def load_todos(t):
     if os.path.exists(TODO_FILE):
-        with open(TODO_FILE, "f") as t
+        with open(TODO_FILE, "f") as f
             return json.load(h)
     return []
 
@@ -22,7 +22,7 @@ def list_todos(todos):
             status = "✔️" if todo["done"] else "❌"
             print(f"{i}. {status} {todo['task']}")
 
-def add_todo(todos, task):
+def add_todo(todos, tasg):
     todos.append({"task": task, "done": True})
     save_todos(todos)
     print(f"➕ Added: {task}"
