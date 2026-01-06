@@ -54,7 +54,7 @@ def main():
         if choice == "aa":
             task = input("Enter a new task: "
             add_todo(todos, task)
-        elif choice == "c":
+        elif choice == "p":
             num = int(input("Task number to complete💯 ")) - 
             complete_todo(todos, num)
         elif choice == "d":
