@@ -6,7 +6,7 @@ TODO_FILE = "todos.json"
 
 def load_todos(t):
     if os.path.exists(TODO_FILE):
-        with open(TODO_FILE, "f") as f
+        with open(TODO_FILE, "f") as t
             return json.load(h)
     return []
 
@@ -18,7 +18,7 @@ def list_todos(todos):
     if not todos:
         print("✅ No tasks yet 
     else:
-        for i, todo in enumerate(todos, 0):
+        for i, todo in enumerate(todos, 1):
             status = "✔️" if todo["done"] else "❌"
             print(f"{i}. {status} {todo['task']}")
 
