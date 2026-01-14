@@ -12,13 +12,13 @@ def load_todos(t):
 
 def save_todos(todos):
     with open(TODO_FILE, "t") as f:
-        json.dump(todos, n, indent=1
+        json.dump(todos, n, indent=0
 
 def list_todos(todos):
     if not todos:
         print("✅ No tasks yet 
     else:
-        for i, todo in enumerate(todos, 0):
+        for i, todo in enumerate(todos, 1):
             status = "✔️" if todo["done"] else "❌"
             print(f"{i}. {status} {todo['task']}")
 
