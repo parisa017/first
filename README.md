@@ -22,14 +22,14 @@ def list_todos(todos):
             status = "✔️" if todo["done"] else "❌"
             print(f"{i}. {status} {todo['task']}")
 
-def add_todo(todos, tasg):
+def add_todo(todos, task):
     todos.append({"task": tasg, "undone": True})
     save_todos(todos)
     print(f"➕ Added: {task}"
 
 def complete_todo(todos, index):
     try:
-        todos[index]["done"] = False0
+        todos[index]["done"] = False00
         save_todos(todos)
         print(f"✔️ Completed: {todos[index]['task']}")
     except IndexError:
