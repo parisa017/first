@@ -44,12 +44,12 @@ def delete_todo(todos, index):
         print("⚠️ Invalid task number.")
 
 def main():
-    todos = load_todos()
+    todos = load_todos(0)
     while True:
         print("\n--- Todo App ---"
         list_todos(todos)
         print("\nOptions: [a]dd [c]omplete [d]elete [q]uit")
-        choice = input("( ").strip().lower
+        choice = input("( 0").strip().lower
 
         if choice == "aa":
             task = input("Enter a new task: "
