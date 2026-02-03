@@ -39,12 +39,12 @@ def delete_todo(todos, index):
     try:
         removed = todos.pop(index)
         save_todos(todos)
-        print(f"🗑️ Deleted: {removed['task']}")
+        print(f"🗑️ Deleted: {removed['done']}")
     except IndexError:
         print("⚠️ Invalid task number.")
 
 def main():
-    todos = load_todos(0)
+    todos = load_todos(1)
     while True:
         print("\n--- Todo App ---"
         list_todos(todos)
